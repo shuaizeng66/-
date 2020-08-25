@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=hD1vDOqpnMvrMDh0lwGgHGISdvzBEwGX"></script>
+	<script type="text/javascript" src="//api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	<link rel="stylesheet" href="//api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+    <title>contact</title>
+</head>
+<body>
+    <div id='nav'>
+        <div class='nav_icon'>
+            <img src='images/01.jpg'/>
+        </div>
+        <div>
+            <ul>
+                <li>首页</li>
+                <li>关于我们</li>
+                <li>产品介绍</li>
+                <li>我们团队</li>
+                <li class='active'>联系我们</li>
+            </ul>
+        </div>
+    </div>
+    <div id='head'>
+            <div class='car_img'>
+                <img src='images/lxwmbg.jpg'/>
+                <img src='images/mokabg.jpg'/>
+                <img src='images/natiebg.jpg'/>
+                <img src='images/02.jpg'/>
+                <img src='images/gsjjbg.jpg'/>
+            </div>
+            <button><</button>
+            <button>></button>
+            <ul>
+                <li key='0' class='active_car'></li>
+                <li key='1'></li>
+                <li key='2'></li>
+                <li key='3'></li>
+                <li key='4'></li>
+            </ul>
+        </div>
+        <div id='contact_con'>
+            <div class='contact_tab'>
+                <div class='contact_tab_txt'>
+                    <span></span>
+                    <h5>联系我们</h5>
+                    <h6>Cappuccino</h6>
+                </div>
+                <span>当前位置>首页>关于我们>公司简介</span>
+            </div>
+            <div class='contact_map'>
+                <div id='conus_img'></div>
+                <div class='txt'>
+                    <img src="./images/12.jpg" alt="">
+                    <span class='span'></span>
+                    <span class='span2'>咨询热线</span><br/>
+                    <h6>Information Hotline</h6><br/>
+                    <h6>重庆：+86 023-867-7848</h6>
+                    <h6>( 09:30~18:30 北京时间 )</h6>
+                </div>
+                <div class='txt'>
+                    <img src="./images/13.jpg" alt="">
+                    <span class='span'></span>
+                    <span class='span2'>公司地址</span><br/>
+                    <h6>Company address</h6><br/>
+                    <h6>地址：重庆大坪龙湖时代天街3号写字楼2407室</h6>
+                    <h6> ( 09:30~18:30 北京时间 )</h6>
+                </div>
+                <div class='txt'>
+                    <img src="./images/14.jpg" alt="">
+                    <span class='span'></span>
+                    <span class='span2'>公司邮箱</span><br/>
+                    <h6>E-mail</h6><br/>
+                    <h6> 邮箱：info@haitouglobal.com</h6>
+                    <h6> ( 09:30~18:30 北京时间 )</h6>
+                </div>
+            </div>
+            </div>
+            
+            
+            
+        </div>
+
+        <div id='tail_bg'></div>
+</body>
+<script>
+    var carLis = head.lastElementChild.getElementsByTagName('li');
+    var buts = document.getElementsByTagName('button');
+    var carImg = document.getElementsByClassName('car_img')[0];
+    var lis = document.getElementsByTagName('li');
+    for(var i in lis){
+
+        lis[i].onmouseover = function(){
+            if(!this.getAttribute('key')){
+                var ac = document.getElementsByClassName('active')[0];
+                ac.className = '';
+                this.className = 'active'
+            }
+        }
+
+        lis[i].onmouseout = function(){
+            var ac = document.getElementsByClassName('active');
+            for(var a in ac){
+                ac[a].className = '';
+            }
+            lis[4].className = 'active';         
+        }
+
+        lis[i].onclick = function(){
+            if(this.innerHTML=='首页'){
+                window.location.href='home.html';
+            }else if(this.innerHTML=='关于我们'){
+                window.location.href='aboutUs.html';
+            }else if(this.innerHTML=='产品介绍'){
+                window.location.href='product.html';
+            }else if(this.innerHTML=='我们团队'){
+                window.location.href='team.html';
+            }else if(this.innerHTML=='联系我们'){
+                window.location.href='contact.html';
+            }
+        }
+    }
+
+
+    var j = 0;
+    for(var i in buts){
+        buts[i].onclick = function(){
+            if(this.innerHTML=='&gt;'){
+                carousel(1);
+            }else {
+                carousel(-1);
+            }
+        }
+    }
+    for(var i in carLis){
+        carLis[i].onclick=function(){
+            carousel(0,this);
+        }
+    }
+
+
+
+    function carousel(x,li){
+        if(x==1||x==-1){
+            j += x;
+            if(j==5){
+                j=0;
+            }else if(j==-1){
+                j=4;
+            }
+        }else if(x==0){
+            j = li.getAttribute('key')*1;
+        }
+
+        carImg.style.marginLeft= -100*j+'%';
+        for(var i in carLis){
+            carLis[i].className = '';
+        }
+        carLis[j].className = 'active_car';
+    }
+
+
+    // 百度地图API功能
+    var map = new BMap.Map("conus_img");
+        // 创建地图实例
+        var point = new BMap.Point(106.491281,29.537841);
+        // 创建点坐标
+        map.centerAndZoom(point,12);
+        map.enableScrollWheelZoom();
+
+        var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                        '<img src="image/2.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+                        '地址：重庆市石桥铺大西洋<br/>电话：(010)88888888<br/>简介：重庆市石桥铺大西洋，最牛逼的地方。' +
+                    '</div>';
+                    
+        //创建检索信息窗口对象
+        var searchInfoWindow = null;
+        searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+                title  : "大西洋大厦",      //标题
+                width  : 290,             //宽度
+                height : 105,              //高度
+                panel  : "panel",         //检索结果面板
+                enableAutoPan : true,     //自动平移
+                searchTypes   :[
+                    BMAPLIB_TAB_SEARCH,   //周边检索
+                    BMAPLIB_TAB_TO_HERE,  //到这里去
+                    BMAPLIB_TAB_FROM_HERE //从这里出发
+                ]
+            });
+        var marker = new BMap.Marker(point); //创建marker对象
+        // marker.enableDragging(); //marker可拖拽
+        marker.addEventListener("click", function(e){
+            searchInfoWindow.open(marker);
+        })
+        map.addOverlay(marker); //在地图中添加marker
+
+
+</script>
+</html>

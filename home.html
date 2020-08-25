@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/home.css">
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=hD1vDOqpnMvrMDh0lwGgHGISdvzBEwGX"></script>
+	<script type="text/javascript" src="//api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	<link rel="stylesheet" href="//api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+    <title>home</title>
+    
+</head>
+<body>
+    <div id='nav' name='home'>
+        <div class='nav_icon'>
+            <img alt="" src="./images/01.jpg" />
+        </div>
+        <ul>
+            <li class ='active'>首页</li>
+            <li>关于我们</li>
+            <li>产品介绍</li>
+            <li>我们团队</li>
+            <li>联系我们</li>
+        </ul>
+    </div>
+    <div id='head'>
+        <div class='car_img'>
+            <img src='images/02.jpg'/>
+            <img src='images/gsjjbg.jpg'/>
+            <img src='images/kbqlbg.jpg'/>
+            <img src='images/mokabg.jpg'/>
+            <img src='images/natiebg.jpg'/>
+        </div>
+        <button><</button>
+        <button>></button>
+        <ul>
+            <li key='0' class='active_car'></li>
+            <li key='1'></li>
+            <li key='2'></li>
+            <li key='3'></li>
+            <li key='4'></li>
+        </ul>
+    </div>
+    <div id='aboutUs'>
+        <span>关于我们</span>
+        <div class = 'aboutUs_con'>
+            <img alt="" src="./images/04.jpg" />
+            <div class='aboutUs_right'>
+                <h3>公司简介</h3>
+                ——
+                <span> 二十世纪三十年代，巴西咖啡豆生产过剩， 剩余的咖啡豆只能当燃料消耗，非常可惜。 当巴
+                    西政府向雀巢公司寻求咖啡豆过剩的解决方法的时候 ， 并没有意识到这最终成就了一个历久弥醇
+                    的伟大的咖啡品牌。 1930年，巴西咖啡连续经历了几次大丰收，短期内难以完全销售，便向雀巢
+                    求助， 求令咖啡不失香醇的长 期保存方式。 咖啡权威——马克思•莫根特尔(Max Morgenthal
+                    er)立刻同他的研究 队伍着手研究，试图制造一种既可以较好保存咖啡芳香又易溶于热水的"固体咖
+                    啡"。经过在雀巢瑞士实验室长达七年的不懈努力，30年代末，雀巢向市场推出速溶咖啡，“雀巢
+                    咖啡”品牌创立。
+                </span>
+                <span>1988年，雀巢通过考察确定云南适宜种植咖啡，决定支持云南省的咖啡种植。随后于1992年 在云南思茅地区成立咖啡农艺服务部，
+                    帮助当地发展咖啡种植业。 1997年， 雀巢公司在西双版纳 创建试验示范农场，从零开始，
+                    让农民得到方方面面的实际培训，大大促进了当地小粒种咖啡豆的 发展，并使一个产量低、
+                    质量次的咖啡豆产地发展成一个产量高、质量优且已引起全球咖啡界关注 的咖啡豆产地。
+                    雀巢不仅让农民通过种植咖啡获得了稳定的收入,当地农民通过向雀巢了解国际现货 
+                    市场价格甚至自己上网查询交易网站的价格，学会根据波动分析销售咖啡的时机。                   
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id='background_02_1'></div>
+    <div id='product_bg'>
+        <div class = 'pro-con'>
+            <span>产品介绍</span>
+            <div class="pro-show">
+                <a href="#">
+                    <dt>
+                        <img src="./images/07.jpg" alt="">
+                        <em></em>
+                        <dd>
+                            <h3>拿铁咖啡</h3>
+                            <i></i>
+                            <span>
+                                拿铁咖啡是意大利浓缩咖啡(Espresso)与牛奶的经典
+                                混合，意大利人也很喜欢把拿铁作为早餐的饮料，带
+                                来让人难以忘怀的味道
+                            </span>
+                        </dd>
+                    </dt>
+                </a>
+                <a href="#">
+                    <dt>
+                        <img src="./images/08.jpg" alt="">
+                        <em></em>
+                        <dd>
+                            <h3>卡布基洛</h3>
+                            <i></i>
+                            <span>
+                                卡布奇诺是一种加入以同量的意大利特浓咖啡和蒸汽泡沫牛奶相混合的意大利咖啡。
+                                象卡布奇诺教会的修士头巾一样,咖啡国此得合
+                            </span>
+                        </dd>
+                    </dt>
+                </a>
+                <a href="#">
+                    <dt>
+                        <img src="./images/09.jpg" alt="">
+                        <em></em>
+                        <dd>
+                            <h3>摩卡咖啡</h3>
+                            <i></i>
+                            <span>
+                                摩卡咖啡(CafeMocha)是一种最古老的咖啡,其历史要追溯到咖啡的起源。它是浓缩咖啡、
+                                鲜奶油和牛奶混合而成,摩卡得名于有名的摩卡港
+                            </span>
+                        </dd>
+                    </dt>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id='team'>
+       <div class='team_con'>
+            <span>公司团队</span>
+            <div class="team_show">
+                <section>
+                    <div class="imgbox">
+                        <img src="./images/rw01.jpg" alt="">
+                    </div>
+                    <div class="word_box">
+                        <h3>贾斯汀·比伯</h3>
+                        <h4>Justin Bieber</h4>
+                        <i></i>
+                        <span>贾斯汀出生于1994年3月1日的加拿大安大略省伦敦的圣若...</span>
+                    </div> 
+                </section>
+                <section>
+                    <div class="imgbox">
+                        <img src="./images/rw02.jpg" alt="">
+                    </div>
+                    <div class="word_box">
+                        <h3>查理·普斯</h3>
+                        <h4>Charlie Puth</h4>
+                        <i></i>
+                        <span>贾斯汀出生于1994年3月1日的加拿大安大略省伦敦的圣若...</span>
+                    </div> 
+                </section>
+                <section>
+                    <div class="imgbox">
+                        <img src="./images/rw03.jpg" alt="">
+                    </div>
+                    <div class="word_box">
+                        <h3>艾薇儿·拉维尼</h3>
+                        <h4>Avril Lavigne</h4>
+                        <i></i>
+                        <span>贾斯汀出生于1994年3月1日的加拿大安大略省伦敦的圣若...</span>
+                    </div> 
+                </section>
+                <section>
+                    <div class="imgbox">
+                        <img src="./images/rw04.jpg" alt="">
+                    </div>
+                    <div class="word_box">
+                        <h3>泰勒·斯威夫特</h3>
+                        <h4>Taylor Swift</h4>
+                        <i></i>
+                        <span>贾斯汀出生于1994年3月1日的加拿大安大略省伦敦的圣若...</span>
+                    </div> 
+                </section>
+            </div>
+       </div>
+    </div>
+    <div id='contactUs'>
+        <div class='contactUs_con'>
+            <span>联系我们</span>
+            <div id='conus_img'></div>
+            <div class='contactUs_con_i'>
+                <div>
+                    <img src="./images/12.jpg" alt="">
+                    <span>咨询电话<br/>
+                        Information Hotline<br/>
+                        重庆：+86 023-867-7848<br/>
+                        ( 09:30~18:30 北京时间 )</span>
+                </div>
+                <div>
+                    <img src="./images/13.jpg" alt="">
+                    <span>公司地址<br/>
+                        Company address<br/>
+                        地址：重庆大坪龙湖时代天街3号写字楼2407室<br/>
+                        ( 09:30~18:30 北京时间 )</span>
+                </div>
+                <div>
+                    <img src="./images/14.jpg" alt="">
+                    <span>公司邮箱<br/>
+                        E-mail<br/>
+                        邮箱：info@haitouglobal.com<br/>
+                        ( 09:30~18:30 北京时间 )</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='tail_bg'></div>
+    
+</body>
+<script>
+    var lis = document.getElementsByTagName('li');
+    var carImg = document.getElementsByClassName('car_img')[0];
+    var buts = document.getElementsByTagName('button');
+    for(var i in lis){
+
+        lis[i].onmouseover = function(){
+            if(!this.getAttribute('key')){
+                var ac = document.getElementsByClassName('active')[0];
+                ac.className = '';
+                this.className = 'active'
+            }
+        }
+
+        lis[i].onmouseout = function(){
+            var ac = document.getElementsByClassName('active');
+            for(var a in ac){
+                ac[a].className = '';
+            }
+            lis[0].className = 'active';         
+        }
+
+        lis[i].onclick = function(){
+            if(this.innerHTML=='关于我们'){
+                window.location.href='aboutUs.html';
+            }else if(this.innerHTML=='产品介绍'){
+                window.location.href='product.html';
+            }else if(this.innerHTML=='我们团队'){
+                window.location.href='team.html';
+            }else if(this.innerHTML=='联系我们'){
+                window.location.href='contact.html';
+            }
+        }
+    }
+
+    var j = 0;
+    for(var i in buts){
+        buts[i].onclick = function(){
+            if(this.innerHTML=='&gt;'){
+                carousel(1);
+            }else {
+                carousel(-1);
+            }
+        }
+    }
+
+    
+    var carLis = head.lastElementChild.getElementsByTagName('li');
+    for(var i in carLis){
+        carLis[i].onclick=function(){
+            carousel(0,this);
+        }
+    }
+
+    //加入定时器
+    // times = setInterval(function(){
+    //     j++;
+    //     if(j==5){
+    //         j = 0;
+    //     }else if(j==-1){
+    //         j=4;
+    //     }
+    //     carousel();
+    // },3000)
+
+    // carImg.onmouseover=function(){
+    //     clearInterval(times);
+    // }
+
+    // carImg.onmouseout = function(){
+    //     times = setInterval(function(){
+    //         j++;
+    //         if(j==5){
+    //             j = 0;
+    //         }else if(j==-1){
+    //             j=4;
+    //         }
+    //         carousel();
+    //     },3000)
+    // }
+
+
+    function carousel(x,li){
+        if(x==1||x==-1){
+            j += x;
+            if(j==5){
+                j=0;
+            }else if(j==-1){
+                j=4;
+            }
+        }else if(x==0){
+            j = li.getAttribute('key')*1;
+        }
+
+        carImg.style.marginLeft= -100*j+'%';
+        for(var i in carLis){
+            carLis[i].className = '';
+        }
+        carLis[j].className = 'active_car';
+    }
+
+
+    // 百度地图API功能
+	var map = new BMap.Map("conus_img");
+	// 创建地图实例
+	var point = new BMap.Point(106.491281,29.537841);
+	// 创建点坐标
+	map.centerAndZoom(point,12);
+	map.enableScrollWheelZoom();
+
+	var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                    '<img src="image/2.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+                    '地址：重庆市石桥铺大西洋<br/>电话：(010)88888888<br/>简介：重庆市石桥铺大西洋，最牛逼的地方。' +
+				  '</div>';
+				  
+	//创建检索信息窗口对象
+    var searchInfoWindow = null;
+	searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title  : "大西洋大厦",      //标题
+			width  : 290,             //宽度
+			height : 105,              //高度
+			panel  : "panel",         //检索结果面板
+			enableAutoPan : true,     //自动平移
+			searchTypes   :[
+				BMAPLIB_TAB_SEARCH,   //周边检索
+				BMAPLIB_TAB_TO_HERE,  //到这里去
+				BMAPLIB_TAB_FROM_HERE //从这里出发
+			]
+		});
+    var marker = new BMap.Marker(point); //创建marker对象
+    // marker.enableDragging(); //marker可拖拽
+    marker.addEventListener("click", function(e){
+	    searchInfoWindow.open(marker);
+    })
+    map.addOverlay(marker); //在地图中添加marker
+
+</script>
+</html>

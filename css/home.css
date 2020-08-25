@@ -1,0 +1,392 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+}
+
+.aboutUs_con,.pro-con,.team_con,.contactUs_con{
+     width: 1200px;
+    margin: 0 auto;
+}
+
+/* 导航 start */
+#nav{
+    width: 100%;
+    height: 55px;
+}
+.nav_icon{
+    width: 30%;
+    height: 55px;
+    float: left;
+    text-align: center;
+}
+#nav .nav_icon img{
+    height: 55px;
+    width: auto;
+}
+#nav ul{
+    width: 70%;
+    overflow: auto;
+}
+#nav li{
+    width: 15%;
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer; 
+}
+
+#nav li.active{
+    border-bottom: 5px solid #866961;
+}
+/* 导航 end */
+
+.img_02{
+    height: 500px;
+    width: auto;
+    padding-left: 43px;
+}
+
+/* 轮播图*/
+#head{
+    width: 100%;
+    height: 473.2px;
+    overflow: hidden;
+    position: relative;
+}
+#head .car_img{
+    width: 500%;
+    transition: all 1s;
+}
+#head .car_img img{
+    width: 20%;
+    height: 473.2px;
+    float: left;
+}
+#head button{
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, .5);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    border: 2px solid #000;
+    font-size: 20px;
+}
+#head button:nth-of-type(1){
+    left: 0px;;
+}
+#head button:nth-of-type(2){
+    right: 0px;
+}
+#head button:hover{
+    border: 2px solid #fff;
+}
+
+#head ul{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+}
+#head ul li{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    float: left;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#head ul li.active_car{
+    background: red;
+}
+/* 轮播图 end*/
+
+
+/* 关于我们 start */
+#aboutUs{
+    background: url(../images/bj01.jpg) no-repeat;   
+    height: 600px;
+    background-size: 100% 100%;
+    padding-top: 35px;
+    text-align: center;
+    font-size: large;
+}
+.aboutUs_con{
+    height: 592.5px;
+    margin: auto;
+    position: relative;
+}
+
+#aboutUs .aboutUs_con img{
+    width: 360px;
+    height: 450px;
+    position: absolute;
+    left: 160px;
+    top: 67px;
+
+}
+#aboutUs .aboutUs_right{
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    left: 530px;
+    top: 67px;
+    text-align: left;
+}
+#aboutUs .aboutUs_right h3{
+    font-size:24px;
+    color: #3A3438;
+    margin-bottom: 20px;
+}
+
+#aboutUs .aboutUs_right span{
+    display: block;
+    text-indent: 2em;
+    font-size: 12px;
+    color: #3A3438;
+    font-weight: 400;
+    line-height:28px;
+}
+#background_02_1{
+    background: url(../images/05.jpg) no-repeat;   
+    height: 85px;
+    background-size: 100% 100%;
+}
+/* 关于我们 end */
+
+
+/* 产品介绍 start*/
+#product_bg{
+    background: url(../images/bj02.jpg) no-repeat;   
+    height: 524.588px;
+    background-size: 100% 100%;
+    padding-top: 30px;
+    text-align: center;
+    font-size: large;
+}
+#product_bg .pro-con .pro-show{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding-top: 70px;
+    /* position: absolute;
+    top: 163px; */
+}
+#product_bg .pro-con .pro-show a{
+    display: block;
+    width: 327px;
+    float: left;
+    margin:0 36px;
+    position: relative;
+}
+#product_bg .pro-con .pro-show dt{
+    width: 327px;
+    height: 298px;
+    background: rgba(51,51,51,1);
+}
+
+#product_bg .pro-con .pro-show dt em{
+    display: none;
+    width: 327px;
+    height: 298px;
+    background: url(../images/search.png) no-repeat center;
+    font-style:normal;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#product_bg .pro-con .pro-show a:hover dt em{
+    display: block;
+    
+}
+#product_bg .pro-con .pro-show dd h3{
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 13px;
+}
+#product_bg .pro-con .pro-show dd span{
+    display: block;
+    width: 327px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    line-height: 24px;
+}
+#product_bg .pro-con .pro-show dd i{
+    display: block;
+    width: 32px;
+    border-top: 1px solid #333;
+    margin:7px 0px 10px 145px;
+}
+#product_bg .pro-con .pro-show a:link  {
+    text-decoration:none;
+}
+#product_bg .pro-con .pro-show a:hover dt img{
+    opacity: 0.5;
+}
+#product_bg .pro-con .pro-show a:hover dd h3{
+    color: #333;
+}
+#product_bg .pro-con .pro-show a:hover dd span{
+    color: #333;
+}
+#product_bg .pro-con .pro-show a:hover dd i{
+    border-color: #333;
+}
+/* 产品介绍完 */
+
+/* 公司团队 */
+#team{
+    /* height: 783px; */
+    background: url(../images/bj04.jpg) no-repeat center;
+    height: 610.838px;
+    background-size: 100% 100%;
+    padding-top: 25px;
+}
+#team .team_con{
+    /* height: 783px; */
+    position: relative;
+    text-align: center;
+}
+
+#team .team_con .team_show{
+    width: 1124px;
+    margin: 70px auto;
+    height: 500px;
+}
+#team .team_con .team_show section{
+    width: 245px;
+    margin: 0 18px;
+    float: left;
+}
+#team .team_con .team_show section .imgbox{
+    width:245px;
+    height:405px;
+    overflow: hidden;
+}
+#team .team_con .team_show section .imgbox img{
+    display: block;
+    width:245px;
+    height:405px;
+}
+#team .team_con .team_show section h3{
+    text-align: center;
+    font-size:20px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:20px;
+    padding-top: 29px;
+}
+#team .team_con .team_show section h4{
+    text-align: center;
+    font-size:16px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:16px;
+    padding-top: 12px;
+}
+#team .team_con .team_show section:hover h3{
+    padding-top: 10px;
+    color: #fff;
+}
+#team .team_con .team_show section:hover h4{
+    display: none;
+}
+#team .team_con .team_show section i{
+    display: none;
+    width: 28px;
+    border-top: 1px solid #fff;
+    text-align: center;
+    margin: 8px auto 0px;
+}
+.word_box{
+    width:245px;
+    height:103px;
+}
+.word_box span{
+    display: none;
+    width: 245px;
+    height:37px;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:24px;
+    text-align:center;
+}
+#team .team_con .team_show section:hover i{
+    display: block;
+}
+#team .team_con .team_show section:hover span{
+    display: block;
+}
+#team .team_con .team_show section:hover .imgbox img{
+    transform: scale(1.2);
+}
+#team .team_con .team_show section:hover .word_box{
+    background: #3c3c3c;
+}
+/* 公司团队完 */
+
+/* 联系我们 */
+#contactUs{
+    background: url(../images/bj05.jpg) no-repeat center;
+    height: 480px;
+    background-size: 100% 100%;
+    padding-top: 25px;
+}
+#contactUs .contactUs_con{
+    height: 456px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+#contactUs .contactUs_con #conus_img{
+    width: 662px;
+    height: 343px;
+    overflow: hidden;
+    font-family:"微软雅黑";
+    outline: none;
+    position: absolute;
+    top: 92px;
+    left: 43px;
+}
+#contactUs .contactUs_con .contactUs_con_i{
+    width: 435px;
+    height: 343px;
+    position: absolute;
+    top: 93px;
+    left: 721px;
+    text-align: left;
+}
+#contactUs .contactUs_con .contactUs_con_i div{
+    width: 100%;
+    height: 114px;
+}
+#contactUs .contactUs_con .contactUs_con_i img{
+    width: 100px;
+    height: 80px;
+    float: left;
+}
+#contactUs .contactUs_con .contactUs_con_i h3,h5{
+    float: left;
+    color:rgba(153,153,153,1);
+}
+
+#tail_bg{
+    background: url(../images/bj06.jpg) no-repeat center;
+    height: 62px;
+    background-size: 100% 100%;
+}

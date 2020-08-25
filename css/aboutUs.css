@@ -1,0 +1,222 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+}
+
+.aboutUs_con,.pro-con,.team_con,.contactUs_con{
+     width: 1200px;
+    margin: 0 auto;
+}
+
+/* 导航 start */
+#nav{
+    width: 100%;
+    height: 55px;
+}
+.nav_icon{
+    width: 30%;
+    height: 55px;
+    float: left;
+    text-align: center;
+}
+#nav .nav_icon img{
+    height: 55px;
+    width: auto;
+}
+#nav ul{
+    width: 70%;
+    overflow: auto;
+}
+#nav li{
+    width: 15%;
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer; 
+}
+
+#nav li.active{
+    border-bottom: 5px solid #866961;
+}
+/* 导航 end */
+
+/* 轮播图*/
+#head{
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+#head .car_img{
+    width: 500%;
+    transition: all 1s;
+}
+#head .car_img img{
+    width: 20%;
+    height: 320px;
+    float: left;
+}
+#head button{
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, .5);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    border: 2px solid #000;
+    font-size: 20px;
+}
+#head button:nth-of-type(1){
+    left: 0px;;
+}
+#head button:nth-of-type(2){
+    right: 0px;
+}
+#head button:hover{
+    border: 2px solid #fff;
+}
+
+#head ul{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+}
+#head ul li{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    float: left;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#head ul li.active_car{
+    background: red;
+}
+/* 轮播图 end*/
+
+#aboutUs_con{
+   width: 995px;
+   margin: 0 auto;
+}
+#aboutUs_con .aboutUs_tab{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid rgba(153,153,153,1);
+}
+#aboutUs_con .aboutUs_tab .aboutUs_tab_txt{
+    width: 120px;
+    height: 50px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+#aboutUs_con .aboutUs_tab .aboutUs_tab_txt span{
+    width: 2px;
+    height: 9px;
+    background: gray;
+    position: absolute;
+    top: 29px;
+    left: 0;
+}
+#aboutUs_con .aboutUs_tab .aboutUs_tab_txt h5{
+    float: left;
+    font-size: 14px;
+    color: rgba(35, 33, 33, 0.8);
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+}
+#aboutUs_con .aboutUs_tab .aboutUs_tab_txt h6{
+    float: left;
+    color:rgba(153,153,153,1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#aboutUs_con .aboutUs_tab span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#aboutUs_con .aboutUs_content{
+    height: 520px;
+    margin-top: 20px;
+    /* display: none; */
+}
+
+/*    */
+#aboutUs_con .aboutUs_content span{
+    display: block;
+    text-indent: 2em;
+    font-size: 12px;
+    color: #3A3438;
+    font-weight: 400;
+    line-height:28px;
+    margin-top: 10px;
+}
+#tail_bg{
+    background: url(../images/bj06.jpg) no-repeat center;
+    height: 62px;
+    background-size: 100% 100%;
+}
+
+.aboutUs_content_02{
+    height: 520px;
+    margin-top: 20px;
+    display: none;
+}
+.aboutUs_content_02 .aboutUs_content_02_list{
+    width: 100%;
+    height: 56px;
+}
+
+.aboutUs_content_02 .aboutUs_content_02_list div:nth-of-type(1){
+    width: 10%;
+    height: 56px;
+    float: left;
+}
+.aboutUs_content_02 .aboutUs_content_02_list div:nth-of-type(2){
+    width: 90%;
+    height: 56px;
+    float: left;
+}
+.aboutUs_content_02 .aboutUs_content_02_list div:nth-of-type(1) h1{
+    color: #866961;
+}
+.aboutUs_content_02 .aboutUs_content_02_list div:nth-of-type(1) h6{
+    color: #808080;
+}
+.aboutUs_content_02 .aboutUs_content_02_list div:nth-of-type(2) h4{
+    color: #a28e89;
+    margin-bottom: 17px;
+}
+.aboutUs_content_02 .aboutUs_content_02_list div:nth-of-type(2) h5{
+    color: #808080;
+}
+.aboutUs_content_03{
+    height: 520px;
+    margin-top: 20px;
+    display: none;
+}
+.aboutUs_content_03_list{
+    width: 100%;
+    height: 56px;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <link rel="stylesheet" href="css/aboutUs.css">
+    <title>aboutUs</title>
+</head>
+<body>
+    <div id='nav'>
+        <div class='nav_icon'>
+            <img src='images/01.jpg'/>
+        </div>
+        <div>
+            <ul>
+                <li>首页</li>
+                <li class='active'>关于我们</li>
+                <li>产品介绍</li>
+                <li>我们团队</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+    </div>
+    <div id='head'>
+            <div class='car_img'>
+                <img src='images/gsjjbg.jpg'/>
+                <img src='images/kbqlbg.jpg'/>
+                <img src='images/mokabg.jpg'/>
+                <img src='images/natiebg.jpg'/>
+                <img src='images/02.jpg'/>
+            </div>
+            <button><</button>
+            <button>></button>
+            <ul>
+                <li key='0' class='active_car'></li>
+                <li key='1'></li>
+                <li key='2'></li>
+                <li key='3'></li>
+                <li key='4'></li>
+            </ul>
+        </div>
+        <div id='aboutUs_con'>
+            <div class='aboutUs_tab'>
+                <div class='aboutUs_tab_txt'>
+                    <span></span>
+                    <h5>公司简介</h5>
+                    <h6>Company profile</h6>
+                </div>
+                <div class='aboutUs_tab_txt'>
+                    <span></span>
+                    <h5>新闻中心</h5>
+                    <h6>News Center</h6>
+                </div>
+                <div class='aboutUs_tab_txt'>
+                    <span></span>
+                    <h5>公司历程</h5>
+                    <h6>Company course</h6>
+                </div>
+                <span>当前位置>首页>关于我们>公司简介</span>
+            </div>
+            <div class='aboutUs_content'>
+                <div>
+                    <img src="images/gsjj02.jpg" alt=""/>
+                </div>
+                <div>
+                    <span>
+                        DUZU公司成立于1867年。19世纪60年代,从事药剂师工作的瑞士籍人亨利内斯特尔( Henri Nestle )为不能享用母乳的婴儿配置了婴儿食品,
+                        发明了一育儿用乳制品,即把果糖和营养剂加入奶粉中,是当时很优秀的育儿食品,但产量很少,它能起到代替母乳的作用,可以挽救不能食用母乳及其他代用品的婴儿,
+                        于是一传十、十传百,逐渐被一些妈妈、助产士以及医生们所知晓。Henri Nestle内斯特尔顺势在1867年创立了育儿奶粉公司,以他的名字Nestle为其产品的品牌名称,
+                        并以咖啡图案作为商标图形。
+                    </span>
+                    <span>
+                        1905年,雀巢育儿奶粉公司与美国人办的另一食品公司合井,取名雀巢英瑞炼乳公司;
+                        1949年为另一家瑞士公司购进,改为现名雀巢食品公司.2015年,Blue Bottle在东京开设了第一家位于日本的门店,仅一个月后第二家门店也随之开张。
+                        截至到2016年, Blue Bottle在美国和日本的门店一共开了29家店,虽然这一数字并不算多,但它的热度正在持续上升, 
+                        Blue Bottle 计划2017年在美国和日本的门店数量将达到55家。
+                    </span>
+                </div>
+            </div>
+            <div class='aboutUs_content_02'>
+                <div class='aboutUs_content_02_list'>
+                    <div>
+                        <h1>13</h1> 
+                        <h6>2018.4</h6>
+                    </div>
+                    <div>
+                        <h4>
+                            DUZU加强其在瑞士的科研能力
+                        </h4>
+                        <h5>
+                            DUZU将其两个科学研究机构---DUZU研究中心和DUZU健康科学研究院合并,建立一个有影响力的组织--DUZU研究,能力高度互补的两…
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class='aboutUs_content_03'>
+                <div class='aboutUs_content_02_list'>
+                    <div>
+                        <h1>13</h1> 
+                        <h6>2018.4</h6>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div id='tail_bg'></div>
+</body>
+<script>
+    var carLis = head.lastElementChild.getElementsByTagName('li');
+    var buts = document.getElementsByTagName('button');
+    var carImg = document.getElementsByClassName('car_img')[0];
+
+    var lis = document.getElementsByTagName('li');
+    for(var i in lis){
+
+        lis[i].onmouseover = function(){
+            if(!this.getAttribute('key')){
+                var ac = document.getElementsByClassName('active')[0];
+                ac.className = '';
+                this.className = 'active'
+            }
+        }
+
+        lis[i].onmouseout = function(){
+            var ac = document.getElementsByClassName('active');
+            for(var a in ac){
+                ac[a].className = '';
+            }
+            lis[1].className = 'active';         
+        }
+
+        lis[i].onclick = function(){
+            if(this.innerHTML=='首页'){
+                window.location.href='home.html';
+            }else if(this.innerHTML=='关于我们'){
+                window.location.href='aboutUs.html';
+            }else if(this.innerHTML=='产品介绍'){
+                window.location.href='product.html';
+            }else if(this.innerHTML=='我们团队'){
+                window.location.href='team.html';
+            }else if(this.innerHTML=='联系我们'){
+                window.location.href='contact.html';
+            }
+        }
+    }
+
+    var j = 0;
+    for(var i in buts){
+        buts[i].onclick = function(){
+            if(this.innerHTML=='&gt;'){
+                carousel(1);
+            }else {
+                carousel(-1);
+            }
+        }
+    }
+    for(var i in carLis){
+        carLis[i].onclick=function(){
+            carousel(0,this);
+        }
+    }
+
+
+    //选项卡
+    var aboutUsTabTxt = document.getElementsByClassName('aboutUs_tab_txt');
+    var aboutUsContent = document.getElementsByClassName('aboutUs_content')[0];
+    var aboutUsContent1 = document.getElementsByClassName('aboutUs_content_02')[0];
+    var aboutUsContent2 = document.getElementsByClassName('aboutUs_content_03')[0];
+    for(var i in aboutUsTabTxt){
+        aboutUsTabTxt[i].onclick = function(){
+            console.log();
+            if(this.innerHTML.indexOf('公司简介')>-1){
+                aboutUsContent.style.display = 'block';
+                aboutUsContent1.style.display = 'none';
+                aboutUsContent2.style.display = 'none';
+            }else if(this.innerHTML.indexOf('新闻中心')>-1){
+                aboutUsContent.style.display = 'none';
+                aboutUsContent1.style.display = 'block';
+                aboutUsContent2.style.display = 'none';
+            }else {
+                aboutUsContent.style.display = 'none';
+                aboutUsContent1.style.display = 'none';
+                aboutUsContent2.style.display = 'block';
+            }
+            
+        }
+    }
+
+    function carousel(x,li){
+        if(x==1||x==-1){
+            j += x;
+            if(j==5){
+                j=0;
+            }else if(j==-1){
+                j=4;
+            }
+        }else if(x==0){
+            j = li.getAttribute('key')*1;
+        }
+
+        carImg.style.marginLeft= -100*j+'%';
+        for(var i in carLis){
+            carLis[i].className = '';
+        }
+        carLis[j].className = 'active_car';
+    }
+
+
+
+</script>
+</html>

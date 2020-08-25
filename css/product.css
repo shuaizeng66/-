@@ -1,0 +1,144 @@
+#product_con{
+    width: 995px;
+    margin: 0 auto;
+}
+#product_con .produc_tab{
+
+}
+
+#product_con .produc_tab{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid rgba(153,153,153,1);
+}
+#product_con .produc_tab .produc_tab_txt{
+    width: 120px;
+    height: 50px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+#product_con .produc_tab .produc_tab_txt span{
+    width: 2px;
+    height: 9px;
+    background: gray;
+    position: absolute;
+    top: 29px;
+    left: 0;
+}
+#product_con .produc_tab .produc_tab_txt h5{
+    float: left;
+    font-size: 14px;
+    color: rgba(35, 33, 33, 0.8);
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+}
+#product_con .produc_tab .produc_tab_txt h6{
+    float: left;
+    color:rgba(153,153,153,1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#product_con .produc_tab span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+.produc_kbql {
+    width: 100%;
+    height: 408px;
+    position: relative;
+    margin-top: 20px;
+}
+.produc_kbql div:nth-of-type(1) {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.produc_kbql div:nth-of-type(1) img{
+    width: 400px;
+}
+.produc_kbql div:nth-of-type(2) {
+    width: 582px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.produc_kbql div:nth-of-type(2) span{
+    display: block;
+    text-indent: 2em;
+    font-size: 14px;
+    color: rgb(44, 36, 41);
+    font-weight: 400;
+    line-height:28px;
+    margin-top: 10px;
+}
+.produc_moka {
+    width: 100%;
+    height: 408px;
+    position: relative;
+    margin-top: 20px;
+    display: none;
+}
+.produc_moka div:nth-of-type(1) {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.produc_moka div:nth-of-type(1) img{
+    width: 400px;
+}
+.produc_moka div:nth-of-type(2) {
+    width: 582px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.produc_moka div:nth-of-type(2) span{
+    display: block;
+    text-indent: 2em;
+    font-size: 14px;
+    color: rgb(44, 36, 41);
+    font-weight: 400;
+    line-height:28px;
+    margin-top: 10px;
+}
+.produc_natie {
+    width: 100%;
+    height: 408px;
+    position: relative;
+    margin-top: 20px;
+    display: none;
+}
+.produc_natie div:nth-of-type(1) {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.produc_natie div:nth-of-type(1) img{
+    width: 400px;
+}
+.produc_natie div:nth-of-type(2) {
+    width: 582px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.produc_natie div:nth-of-type(2) span{
+    display: block;
+    text-indent: 2em;
+    font-size: 14px;
+    color: rgb(44, 36, 41);
+    font-weight: 400;
+    line-height:28px;
+    margin-top: 10px;
+}

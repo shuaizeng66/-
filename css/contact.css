@@ -1,0 +1,93 @@
+#contact_con{
+    width: 995px;
+    margin: 0 auto;
+}
+
+#contact_con .contact_tab{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid rgba(153,153,153,1);
+}
+#contact_con .contact_tab .contact_tab_txt{
+    width: 120px;
+    height: 50px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+#contact_con .contact_tab .contact_tab_txt span{
+    width: 2px;
+    height: 9px;
+    background: gray;
+    position: absolute;
+    top: 29px;
+    left: 0;
+}
+#contact_con .contact_tab .contact_tab_txt h5{
+    float: left;
+    font-size: 14px;
+    color: rgba(35, 33, 33, 0.8);
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+}
+#contact_con .contact_tab .contact_tab_txt h6{
+    float: left;
+    color:rgba(153,153,153,1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#contact_con .contact_tab span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.contact_map{
+    width: 100%;
+    height: 500px;
+}
+.contact_map #conus_img{
+    width: 100%;
+    height: 343px;
+    overflow: hidden;
+    font-family:"微软雅黑";
+    outline: none;
+    margin-top: 20px;
+    float: left;
+}
+
+.contact_map .txt{
+    width: 330px;
+    float: left;
+    margin-top: 20px;
+    position: relative;
+}
+.contact_map .txt .span{
+    width: 2px;
+    height: 9px;
+    background: gray;
+    position: absolute;
+    top: 10px;
+    left: 81px;
+}
+.contact_map .txt .span2{
+    margin-left: 6px;
+}
+.contact_map .txt img{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.contact_map .txt h6:nth-of-type(1){
+   color: rgba(153,153,153,1);
+}
+.contact_map .txt h6:nth-of-type(3){
+    color: rgba(153,153,153,1);
+ }
